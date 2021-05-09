@@ -65,17 +65,6 @@ input.onGesture(Gesture.Shake, function () {
     basic.pause(500)
     basic.clearScreen()
 })
-input.onGesture(Gesture.LogoDown, function () {
-    basic.showLeds(`
-        . . . . .
-        # # . # #
-        . # . # .
-        . . . . .
-        . # # # .
-        `)
-    basic.pause(500)
-    basic.clearScreen()
-})
 // Bボタンを押したら悲しい顔
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
@@ -107,6 +96,17 @@ input.onPinPressed(TouchPin.P1, function () {
         . . . . .
         . # # # .
         # . . . #
+        `)
+    basic.pause(500)
+    basic.clearScreen()
+})
+input.onGesture(Gesture.FreeFall, function () {
+    basic.showLeds(`
+        . . . . .
+        # # . # #
+        . # . # .
+        . . . . .
+        . # # # .
         `)
     basic.pause(500)
     basic.clearScreen()
