@@ -1,3 +1,4 @@
+// P0でウィンク
 input.onPinPressed(TouchPin.P0, function () {
     basic.showLeds(`
         # . . # .
@@ -9,6 +10,7 @@ input.onPinPressed(TouchPin.P0, function () {
     basic.pause(500)
     basic.clearScreen()
 })
+// 右に傾けるとオーって感じの顔
 input.onGesture(Gesture.TiltRight, function () {
     basic.showLeds(`
         # # . # #
@@ -20,7 +22,7 @@ input.onGesture(Gesture.TiltRight, function () {
     basic.pause(500)
     basic.clearScreen()
 })
-// Bボタンを押したら悲しい顔
+// Aでニコリ
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         . # . # .
@@ -32,6 +34,7 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(500)
     basic.clearScreen()
 })
+// 左に傾けるとポカーン顔
 input.onGesture(Gesture.TiltLeft, function () {
     basic.showLeds(`
         . # . # .
@@ -43,6 +46,7 @@ input.onGesture(Gesture.TiltLeft, function () {
     basic.pause(500)
     basic.clearScreen()
 })
+// P2で頬を膨らませる
 input.onPinPressed(TouchPin.P2, function () {
     basic.showLeds(`
         # . . . #
@@ -54,18 +58,19 @@ input.onPinPressed(TouchPin.P2, function () {
     basic.pause(500)
     basic.clearScreen()
 })
+// 揺れると無表情
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
-        # . . # .
+        . . . . .
         . # . # .
         . . . . .
-        # . . . #
         . # # # .
+        . . . . .
         `)
     basic.pause(500)
     basic.clearScreen()
 })
-// Bボタンを押したら悲しい顔
+// A＋Bで通常ニコリ
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
         . . . . .
@@ -77,7 +82,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.pause(500)
     basic.clearScreen()
 })
-// Bボタンを押したら悲しい顔
+// Bでニヤリ
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
         . . . . .
@@ -89,6 +94,7 @@ input.onButtonPressed(Button.B, function () {
     basic.pause(500)
     basic.clearScreen()
 })
+// P1でムっとした顔
 input.onPinPressed(TouchPin.P1, function () {
     basic.showLeds(`
         # . . . #
@@ -100,6 +106,7 @@ input.onPinPressed(TouchPin.P1, function () {
     basic.pause(500)
     basic.clearScreen()
 })
+// 落すとジト目
 input.onGesture(Gesture.FreeFall, function () {
     basic.showLeds(`
         . . . . .
